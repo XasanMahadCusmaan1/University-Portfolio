@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --primary-color:#895BF6;
+    --secondary-color: #4B00FF;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --second-white: #DDD5EF;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+nav{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: var(--white-color);
+}
+.nav-lists{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.icon{
+    display: none;
+}
+.nav-lists ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.nav-lists ul li a{
+    color:#DDD5EF;
+    font-family: Poppins;
+    font-weight:400 ;
+}
+ul li a:hover{
+    border-bottom: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+.header__section{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.text__side{
+    width: 50%;
+    margin-top: 12%;
+}
+.text__side h1{
+    font-size: 40px;
+    font-family: Poppins;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.text__side p{
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 300;
+    color: var(--second-white);
+    margin-bottom: 20px;
+    /* line-height: ;  */
+}
+.input__button{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.header__input{
+    width: 70%;
+    font-size: 15px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    margin: 0px 10px 0px 0px;
+}
+
+.header__input::placeholder{
+    color: var(--white-color);
+}
+.header__button{
+    font-size: 20px;
+    background-color: var(--white-color);
+    padding: 9px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.image__side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+}
+.header__image{
+    width: 80%;
+}
+
+/* Ended header section  */
