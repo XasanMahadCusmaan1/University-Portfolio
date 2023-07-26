@@ -117,11 +117,16 @@ ul li a:hover {
 .header__button {
   font-size: 20px;
   background-color: var(--white-color);
-  padding: 9px 30px;
+  padding: 7px 30px;
   border: none;
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.header__button:hover {
+  background: transparent;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
 }
 .image__side {
   width: 50%;
@@ -208,7 +213,7 @@ span{
 .about-button button{
     font-size: 20px;
     background-color: var(--secondary-color);
-    padding: 10px 30px;
+    padding: 10px 25px;
     color: var(--white-color);
     margin-top: 60px;
     border: none;
@@ -216,6 +221,11 @@ span{
     border-radius: 5px;
     cursor: pointer;
 
+}
+.about-button button:hover{
+  border: 1px solid var(--secondary-color);
+  color: var(--black-color);
+  background: transparent;
 }
 /* section two Ended  */
 /* section threee goes here  */
