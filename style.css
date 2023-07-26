@@ -13,8 +13,8 @@
   --white-color: #ffffff;
   --second-white: #ddd5ef;
 }
-body{
-    font-family: Poppins;
+body {
+  font-family: Poppins;
 }
 header {
   padding: 20px;
@@ -171,75 +171,102 @@ ul li a:hover {
 
 /* Ended header section  */
 /* Section two starts here  */
-#aboutus{
-    max-width: 90%;
-    padding: 20px 0px;
-    margin: 0 auto;
+#aboutus {
+  max-width: 90%;
+  padding: 20px 0px;
+  margin: 0 auto;
 }
-.about-top{
-    position: relative;
-    margin:30px 0px
+.about-top {
+  position: relative;
+  margin: 30px 0px;
 }
-.icon-possitioning{
-    position: absolute;
-    top: 0;
-    right: 0;
-    animation:asetsAnimation 4s ease-in infinite; ;
+.icon-possitioning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: asetsAnimation 4s ease-in infinite;
 }
-h2{
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
 }
-span{
-    font-size: 20px;
-    font-weight: 500;
+span {
+  font-size: 20px;
+  font-weight: 500;
 }
-.about-p{
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--black-color);
-    padding-top: 10px;
+.about-p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black-color);
+  padding-top: 10px;
 }
-.about-img{
-    width: 50%;
+.about-img {
+  width: 50%;
 }
-.about-image-text{
-    display: flex;
-    gap: 40px;
-    align-items: center;
+.about-image-text {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
-.about-button button{
-    font-size: 20px;
-    background-color: var(--secondary-color);
-    padding: 10px 25px;
-    color: var(--white-color);
-    margin-top: 60px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-
+.about-button button {
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 25px;
+  color: var(--white-color);
+  margin-top: 60px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.about-button button:hover{
+.about-button button:hover {
   border: 1px solid var(--secondary-color);
   color: var(--black-color);
   background: transparent;
 }
 /* section two Ended  */
 /* section threee goes here  */
-#Values{
-    max-width: 90%;
-    height: 100vh;
-    overflow: visible;
-    background-position: center;
-    background-repeat: no-repeat ;
-    background-size: cover;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 40px auto;
-    background-image: url(/images/image\ 2.png);
+#Values {
+  max-width: 90%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto;
+  background-image: url(/images/image\ 2.png);
+}
+.value-text-side {
+  margin-top: 10%;
+  width: 50%;
+}
+h3 {
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.value-text-side ul li {
+  font-size: 14px;
+  color: var(--white-color);
+  list-style-type: disc;
+}
+.value-button {
+  margin-top: 10%;
+}
+.value-image-side {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.aset3 {
+  width: 100%;
+  animation: asetsAnimation 4s ease-in infinite;
 }
 /* Media Queries Goes Here  */
 @media (max-width: 798px) {
@@ -279,5 +306,36 @@ span{
   }
   .input__button {
     justify-content: center;
+  }
+  /* section two media queries goes here  */
+  .about-image-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-possitioning {
+    display: none;
+  }
+  .about-img {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  /* section three media queries goes here  */
+  #Values{
+    flex-direction: column;
+  }
+  .value-text-side{
+    width: 100%;
+    margin-top: 0%;
+  }
+  .value-image-side{
+    width: 100%;
+  }
+  .value-button {
+    margin-top: 5%;
+  }
+  .aset3 {
+    width: 60%;
   }
 }
