@@ -56,6 +56,12 @@ nav {
 }
 .icon {
   display: none;
+  background-color: var(--white-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 4px var(--black-color),
+    0px 0px 5px var(--black-color);
+  border: 1px solid var(--white-color);
 }
 .nav-lists ul li {
   display: inline;
@@ -214,6 +220,12 @@ span {
 }
 .about-img {
   width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--black-color);
+  transition: 1s;
+}
+.about-img:hover {
+  transform: rotate(5deg);
 }
 .about-image-text {
   display: flex;
@@ -223,7 +235,7 @@ span {
 .about-button button {
   font-size: 20px;
   background-color: var(--secondary-color);
-  padding: 10px 25px;
+  padding: 10px 20px;
   color: var(--white-color);
   margin-top: 60px;
   border: none;
@@ -251,7 +263,7 @@ span {
   flex-direction: row;
   justify-content: center;
   margin: 30px auto;
-  background-image: url(/images/image\ 2.png);
+  background-image: url(/images/pexels-emily-ranquist-1205651.jpg);
 }
 .value-text-side {
   margin-top: 10%;
@@ -268,6 +280,7 @@ h3 {
 }
 .value-button {
   margin-top: 10%;
+  padding: 10px 20px;
 }
 .value-image-side {
   display: grid;
@@ -321,7 +334,7 @@ h3 {
     width: 100%;
     height: 100%;
   }
-  .nav-lists ul li {
+  .nav-lists ul li a {
     display: none;
   }
   .icon {
