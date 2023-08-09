@@ -220,12 +220,12 @@ span {
 }
 .about-img {
   width: 50%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px var(--black-color);
+  border-radius: 20% 0% 20% 0%;
+  box-shadow: 0px 0px 2px var(--black-color);
   transition: 1s;
 }
 .about-img:hover {
-  transform: rotate(5deg);
+  transform: scale(0.9);
 }
 .about-image-text {
   display: flex;
@@ -251,47 +251,62 @@ span {
 }
 /* section two Ended  */
 /* section threee goes here  */
-#Values {
-  max-width: 90%;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30px;
-  padding: 20px;
+#values {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 30px auto;
-  background-image: url(/images/pexels-emily-ranquist-1205651.jpg);
+  gap: 40px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
-.value-text-side {
-  margin-top: 10%;
+.back-image {
   width: 50%;
 }
-h3 {
-  color: var(--white-color);
-  margin-bottom: 20px;
-}
-.value-text-side ul li {
-  font-size: 14px;
-  color: var(--white-color);
-  list-style-type: disc;
-}
-.value-button {
-  margin-top: 10%;
-  padding: 10px 20px;
-}
-.value-image-side {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  width: 50%;
-  gap: 20px;
-}
-.aset3 {
+.back-image img {
   width: 100%;
-  animation: asetsAnimation 4s ease-in infinite;
+  border-radius: 20% 0% 20% 0%;
+  box-shadow: 0px 0px 2px var(--black-color);
+  transition: 1s;
+}
+.back-image img:hover {
+  transform: scale(0.9);
+}
+.value-image {
+  width: 50%;
+  border-radius: 20px;
+}
+.value-text {
+  width: 50%;
+  display: grid;
+  place-content: center;
+}
+.value-text p {
+
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black-color);
+  padding-top: 10px;
+}
+.value-button button {
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  color: var(--white-color);
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+}
+.value-button button:hover{
+  transition: 0.5s;
+  color: var(--black-color);
+  background: transparent;
+}
+h3{
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 /* section threee end goes here  */
 .card-container {
@@ -382,20 +397,14 @@ h3 {
     margin-bottom: 20px;
   }
   /* section three media queries goes here  */
-  #Values {
+  #values{
+    display: flex;
     flex-direction: column;
   }
-  .value-text-side {
-    width: 100%;
-    margin-top: 0%;
-  }
-  .value-image-side {
+  .back-image{
     width: 100%;
   }
-  .value-button {
-    margin-top: 5%;
-  }
-  .aset3 {
-    width: 60%;
+  .value-text{
+    width: 100%;
   }
 }
