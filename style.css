@@ -401,7 +401,7 @@ video{
 .the-text{
   margin: auto;
 }
-.the-text h6 {
+.the-text .h6 {
   font-size: 30px;
   font-weight: 400;
   font-family: Poppins;
@@ -453,6 +453,56 @@ video{
     color: var(--white-color);
   }
 }
+/* ended last section  */
+.teachers{
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+.top-info-teachers h6{
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+}
+.top-info-teachers p{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black-color);
+  padding: 10px;
+}
+.span-1{
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 50px;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-weight: 200;
+  box-shadow: 0px 0px 5px var(--black-color);
+}
+.teacher-cards{
+  background-color: var(--primary-color);
+  box-shadow: inset 0px 0px 20px var(--white-color);
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: 340px;
+  position: relative;
+  margin-left: 100px;
+}
+.teacher-image-side img{
+  width: 200px;
+  position: absolute;
+  left: -50px;
+  border-radius: 10% 0px 10% 0px;
+  box-shadow: 0px 0px 5px var(--black-color);
+}
+
 /* Media Queries Goes Here  */
 @media (max-width: 798px) {
   header {
